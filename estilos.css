@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 40px;
+  margin: 0;
+}
+
+h1 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 28px;
+}
+
+#container {
+  display: grid;
+  /* 4 columnas para dar espacio a CUATRO */
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  /* 3 filas */
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 90vw;
+  max-width: 1000px;
+  min-width: 700px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #fff;
+  height: 60vh;
+  min-height: 450px;
+}
+
+.caja {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+
+.uno {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4; /* profesor este ocupa las 3 filas */
+  background-color: #006400;
+}
+
+.dos {
+  grid-column: 2 / 4; /*  este ocupa 2 columnas (2 y 3) */
+  grid-row: 1 / 2;
+  background-color: #006400;
+}
+
+.tres {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  background-color: #ff0000;
+}
+
+.cuatro {
+  grid-column: 4 / 5; 
+  grid-row: 2 / 4; 
+  background-color: #006400;
+}
+
+.cinco {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #ffa500;
+}
+
+.siete {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #ff0000;
+}
+
+.ocho {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background-color: #ff0000;
+}
+
+.seis {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  background-color: #ffa500;
+}
